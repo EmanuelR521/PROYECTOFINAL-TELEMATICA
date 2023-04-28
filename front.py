@@ -50,6 +50,6 @@ def update_output(n_clicks, user, password):
       if n_clicks > 0:
         return html.Div([
             html.H3('Credenciales incorrectas', style={'color': 'red'})
-        ])
+            ])
 app.run_server(host='0.0.0.0',port=1000)
 
