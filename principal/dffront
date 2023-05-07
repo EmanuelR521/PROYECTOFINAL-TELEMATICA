@@ -1,0 +1,8 @@
+FROM python
+RUN pip3 install dash
+RUN pip3 install pandas
+RUN pip3 install matplotlib
+WORKDIR /home/app/
+COPY front.py .
+EXPOSE 80
+CMD python3 /home/app/front.py
