@@ -1,0 +1,7 @@
+FROM python
+RUN pip3 install flask
+RUN pip3 install pandas
+WORKDIR /home/app/
+COPY dB.py .
+EXPOSE 1002
+CMD python3 /home/app/dB.py
